@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="539.0" style="-fx-background-color: #6DA59E;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nta_chat_controllers.Login_controller">
+   <children>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="225.0" layoutY="-36.0" prefHeight="365.0" prefWidth="139.0" style="-fx-background-color: #8FDBD1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <TextField fx:id="username" layoutY="152.0" prefHeight="25.0" prefWidth="139.0" promptText="Enter your Username" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <TextField fx:id="password" layoutX="26.0" layoutY="185.0" promptText="Enter your Password" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Button fx:id="btn_login" layoutX="138.0" layoutY="226.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="87.0" text="Login" textFill="#1c4340" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="226.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="38.0" layoutY="52.0" prefHeight="56.0" prefWidth="114.0" style="-fx-background-color: #8FDBD1;" text="NTA ">
+               <font>
+                  <Font name="Comic Sans MS" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="108.0" prefHeight="17.0" prefWidth="128.0" text="Chat application">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="302.0" prefHeight="17.0" prefWidth="151.0" text="if you are not logged in,please " AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="11.0">
+               <font>
+                  <Font name="Calibri Italic" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="link_register" layoutX="145.0" layoutY="319.0" onAction="#go_register" prefHeight="23.0" prefWidth="79.0" text="Register here" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="Calibri Italic" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="flash_msg" layoutX="11.0" layoutY="259.0" prefHeight="35.0" prefWidth="218.0" textFill="#fb0808">
+               <font>
+                  <Font name="Arial Bold Italic" size="11.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
