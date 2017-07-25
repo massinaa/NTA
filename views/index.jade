@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1 Members Area
+		h5 Welcome to  the members area
+	#container
+		h2  ChatIO
+		#mainWrapper
+			#chatWrapper
+				#chatWindow  
+				form#messageForm 
+					input#message(size='35', placeholder='Type Something')
+					input(type='submit', value='Say it')
+			#userWrapper
+				#users
